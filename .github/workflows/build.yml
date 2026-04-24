@@ -24,6 +24,7 @@ jobs:
       - name: Build JAR
         run: mvn clean package -DskipTests
 
+  publish:
       - name: Set image name
         run: echo "IMAGE_URL=rajeshkrvd/pe-core-api:${{ github.sha }}" >> $GITHUB_ENV
 
