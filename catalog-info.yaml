@@ -1,15 +1,11 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-name: core-api
-description: Core API service running on Kubernetes
-tags:
-  - java
-  - spring-boot
-  - kubernetes
-annotations:
-backstage.io/kubernetes-label-selector: 'app.kubernetes.io/name=core-api'
+  name: core-api
+  description: Spring Boot core API service
+  annotations:
+    github.com/project-slug: rajesh-karavadi/core-api
 spec:
-type: service
-lifecycle: production
-owner: team-core
+  type: service
+  lifecycle: production
+  owner: devops-team
